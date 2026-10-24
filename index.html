@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TVA sur marge pour PrestaShop | Tockworks</title>
+<meta name="description" content="Module PrestaShop pour les revendeurs de biens d'occasion : TVA calculée sur la marge, pièce par pièce, et factures conformes. Sortie prévue fin 2026.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231f3a5f'/%3E%3Cpath d='M32 14v18l12 8' stroke='%23fff' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --ink: #1b2430;
+    --muted: #4f5b6b;
+    --brand: #1f3a5f;
+    --accent: #c4682d;
+    --bg: #ffffff;
+    --soft: #f4f6f9;
+    --line: #dde3ea;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+  header.top { border-bottom: 1px solid var(--line); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { font-weight: 700; font-size: 20px; color: var(--brand); text-decoration: none; letter-spacing: 0.2px; }
+  .logo span { color: var(--accent); }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 20px; font-size: 15px; }
+  .hero { padding: 64px 0 48px; }
+  .badge { display: inline-block; background: var(--soft); color: var(--brand); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: 14px; margin-bottom: 18px; }
+  h1 { font-size: 40px; line-height: 1.15; margin: 0 0 18px; color: var(--brand); }
+  .lead { font-size: 20px; color: var(--muted); max-width: 720px; margin: 0 0 28px; }
+  .btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; padding: 14px 26px; border-radius: 8px; font-size: 17px; }
+  .btn:hover { filter: brightness(0.95); }
+  .meta { margin-top: 16px; color: var(--muted); font-size: 15px; }
+  section { padding: 48px 0; }
+  section.alt { background: var(--soft); }
+  h2 { font-size: 28px; color: var(--brand); margin: 0 0 18px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 20px 22px; }
+  .card h3 { margin: 0 0 8px; font-size: 18px; color: var(--brand); }
+  .card p { margin: 0; color: var(--muted); font-size: 16px; }
+  table.example { border-collapse: collapse; width: 100%; max-width: 620px; background: #fff; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  table.example th, table.example td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--line); }
+  table.example th { background: var(--soft); font-weight: 600; }
+  table.example td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .note { color: var(--muted); font-size: 15px; margin-top: 12px; max-width: 720px; }
+  ul.list { padding-left: 20px; margin: 0; }
+  ul.list li { margin: 6px 0; }
+  .faq dt { font-weight: 600; margin-top: 18px; color: var(--brand); }
+  .faq dd { margin: 6px 0 0; color: var(--muted); }
+  .cta { text-align: center; }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
+  footer a { color: var(--muted); }
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    h1 { font-size: 30px; }
+    .lead { font-size: 18px; }
+    nav a { margin-left: 12px; font-size: 14px; }
+    .hero { padding: 40px 0 32px; }
+    section { padding: 36px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="/">Tock<span>works</span></a>
+    <nav>
+      <a href="#fonctions">Fonctions</a>
+      <a href="#questions">Questions</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div class="badge">Module PrestaShop, sortie prévue fin 2026</div>
+      <h1>La TVA sur marge, enfin gérée dans votre boutique PrestaShop</h1>
+      <p class="lead">Pour les boutiques en ligne qui revendent de l'occasion&nbsp;: la TVA calculée sur votre marge, pièce par pièce, et des factures conformes, sans tableur ni bricolage.</p>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfRyb02x6jqyGwt5UZU0VAeCtttxppWHOzWtSJn2aNVHN5PRw/viewform">Être prévenu à la sortie</a>
+      <p class="meta">Prix&nbsp;: 99&nbsp;€ HT, première année de mises à jour et d'assistance comprise. Offre de lancement&nbsp;: 69,99&nbsp;€ HT pendant le premier mois.</p>
+    </div>
+  </div>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>Le problème</h2>
+      <p>Quand vous achetez un article à un particulier et le revendez, la loi vous permet de ne payer la TVA que sur votre marge. PrestaShop, lui, calcule toujours la TVA sur le prix de vente entier. Exemple avec une veste achetée 30&nbsp;€ et revendue 80&nbsp;€&nbsp;:</p>
+      <table class="example">
+        <tr><th></th><th>TVA calculée par PrestaShop</th><th>TVA sur marge</th></tr>
+        <tr><td>Base de calcul</td><td class="num">80,00&nbsp;€</td><td class="num">50,00&nbsp;€</td></tr>
+        <tr><td>TVA à 20&nbsp;%</td><td class="num">13,33&nbsp;€</td><td class="num">8,33&nbsp;€</td></tr>
+      </table>
+      <p class="note">Pour s'en sortir, beaucoup de boutiques mettent un taux de 0&nbsp;% sur l'occasion et recalculent la TVA à la main. Les factures affichent alors une colonne «&nbsp;0&nbsp;%&nbsp;», le prix d'achat de chaque pièce se perd, et les paniers qui mêlent neuf et occasion deviennent un casse-tête.</p>
+    </div>
+  </section>
+
+  <section id="fonctions">
+    <div class="wrap">
+      <h2>Ce que fait le module</h2>
+      <div class="grid">
+        <div class="card"><h3>Prix d'achat pièce par pièce</h3><p>Chaque pièce garde son prix d'achat et sa pièce justificative, même pour des articles identiques achetés à des prix différents.</p></div>
+        <div class="card"><h3>TVA sur marge calculée à chaque vente</h3><p>Paniers mixtes neuf et occasion, frais de port et remises répartis, marge négative comptée pour zéro.</p></div>
+        <div class="card"><h3>Des factures conformes</h3><p>Aucune TVA affichée sur les articles sous marge, et la mention «&nbsp;Régime particulier-Biens d'occasion&nbsp;» seulement sur les factures concernées.</p></div>
+        <div class="card"><h3>Récapitulatifs pour votre déclaration</h3><p>Les montants utiles à la déclaration de TVA, et un export pour votre expert-comptable.</p></div>
+        <div class="card"><h3>Prêt pour septembre 2027</h3><p>Les données de vos ventes sous marge préparées pour la transmission au fisc (e-reporting) qui devient obligatoire pour les petites entreprises.</p></div>
+        <div class="card"><h3>Sans toucher à l'existant</h3><p>Conçu pour PrestaShop 8 et 9. Le module ne modifie jamais vos commandes, vos factures déjà émises ni vos paiements.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>Pour qui</h2>
+      <p>Les boutiques en ligne sous PrestaShop qui revendent des biens d'occasion et paient la TVA&nbsp;:</p>
+      <ul class="list">
+        <li>friperies et vêtements vintage</li>
+        <li>brocanteurs et antiquaires</li>
+        <li>librairies d'occasion</li>
+        <li>électronique reconditionnée</li>
+        <li>meubles et décoration</li>
+        <li>objets de collection et œuvres d'art</li>
+      </ul>
+      <p class="note">Si vous êtes en franchise de TVA, vous ne facturez pas de TVA du tout&nbsp;: le module ne vous sera pas utile.</p>
+    </div>
+  </section>
+
+  <section id="questions">
+    <div class="wrap">
+      <h2>Questions</h2>
+      <dl class="faq">
+        <dt>Quand le module sera-t-il disponible&nbsp;?</dt>
+        <dd>Fin 2026. Les inscrits à la liste d'attente seront prévenus en premier.</dd>
+        <dt>Où pourrai-je l'acheter&nbsp;?</dt>
+        <dd>Sur le catalogue officiel des modules PrestaShop (PrestaShop Addons), qui vérifie chaque module avant de le publier.</dd>
+        <dt>Combien coûtera-t-il&nbsp;?</dt>
+        <dd>99&nbsp;€ HT, avec la première année de mises à jour et d'assistance. Pendant le premier mois après la sortie, il sera proposé à 69,99&nbsp;€ HT. Ensuite, le renouvellement annuel est facultatif.</dd>
+        <dt>Le module remplace-t-il mon expert-comptable&nbsp;?</dt>
+        <dd>Non. Il applique les règles publiées par l'administration fiscale et prépare vos chiffres, mais il ne donne pas de conseil fiscal. Votre expert-comptable reste votre interlocuteur pour les cas particuliers.</dd>
+        <dt>Que faites-vous de mon adresse e-mail&nbsp;?</dt>
+        <dd>Elle sert uniquement à vous prévenir du lancement. Les détails sont dans la page <a href="/mentions-legales/">mentions légales et confidentialité</a>.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="alt cta">
+    <div class="wrap">
+      <h2>Soyez prévenu à la sortie</h2>
+      <p>Une minute pour vous inscrire, aucun engagement.</p>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfRyb02x6jqyGwt5UZU0VAeCtttxppWHOzWtSJn2aNVHN5PRw/viewform">Rejoindre la liste d'attente</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    © 2026 Tockworks | <a href="/mentions-legales/">Mentions légales et confidentialité</a> | Contact&nbsp;: <a href="mailto:support@tockworks.com">support@tockworks.com</a><br>
+    PrestaShop est une marque de PrestaShop SA. Tockworks n'est pas affilié à PrestaShop SA.
+  </div>
+</footer>
+
+</body>
+</html>
