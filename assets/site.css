@@ -148,6 +148,13 @@ h2 { font-size: clamp(28px, 3.3vw, 38px); line-height: 1.15; letter-spacing: -0.
 .section-head p:last-child { margin: 0; font-size: 18px; color: var(--muted); }
 @media (max-width: 600px) { .section { padding: 64px 0; } .section-head { margin-bottom: 32px; } }
 
+/* Vidéo */
+.video-section { padding-top: 72px; }
+.video-frame { overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: var(--brand-dark); box-shadow: var(--shadow-lg); }
+.video-frame video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: var(--brand-dark); }
+.video-note { margin: 14px 0 0; font-size: 14px; color: var(--muted); }
+@media (max-width: 600px) { .video-section { padding-top: 48px; } .video-frame { border-radius: 12px; } }
+
 /* Comparaison */
 .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 880px; }
 .compare-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 28px; }
